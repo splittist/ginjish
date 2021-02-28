@@ -1,4 +1,4 @@
-;;;; ginjish-compiler.lisp
+;;;; compiler.lisp
 
 (cl:in-package #:ginjish-compiler)
 

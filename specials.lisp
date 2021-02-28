@@ -1,4 +1,4 @@
-;;;; ginjish-specials.lisp
+;;;; specials.lisp
 
 (cl:in-package #:ginjish-specials)
 

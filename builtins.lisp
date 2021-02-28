@@ -1,4 +1,4 @@
-;;;; ginjish-builtins.lisp
+;;;; builtins.lisp
 
 (cl:in-package #:ginjish-builtins)
 

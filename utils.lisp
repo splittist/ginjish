@@ -1,4 +1,4 @@
-;;;; ginjish-utils.lisp
+;;;; utils.lisp
 
 (cl:in-package #:ginjish-utils)
 
@@ -158,6 +158,12 @@
   (:method (thing)
     thing))
 
+(defun print-float (float stream)
+  (let ((s (format nil "~F" float)))
+    (if (serapeum:string$= "d0" s)
+        (princ (subseq s 0 (- (length s) 2)) float)
+        (princ (substitute #\e #\d s) stream))))
+
 (defgeneric print-expression (thing stream &optional recursive)
   (:method (thing stream &optional recursive)
     (declare (ignore recursive))
@@ -172,7 +178,7 @@
   (:method ((thing rational) stream &optional recursive)
     (declare (ignore recursive))
     (let ((*read-default-float-format* 'double-float))
-      (princ (float thing) stream)))
+      (print-float (float thing) stream)))
   (:method ((thing string) stream &optional recursive)
     (when recursive (princ "'" stream))
     (princ thing stream)

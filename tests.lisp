@@ -1,4 +1,4 @@
-;;;; ginjish-tests.lisp
+;;;; tests.lisp
 
 (cl:defpackage #:ginjish-tests
   (:use #:cl #:parachute))

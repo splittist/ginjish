@@ -1,4 +1,4 @@
-;;;; ginjish-conditions.lisp
+;;;; conditions.lisp
 
 (cl:in-package #:ginjish-conditions)
 

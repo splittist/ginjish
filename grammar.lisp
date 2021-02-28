@@ -1,4 +1,4 @@
-;;;; ginjish-grammar.lisp
+;;;; grammar.lisp
 
 (cl:in-package #:ginjish-grammar)
 

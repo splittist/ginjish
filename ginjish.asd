@@ -19,4 +19,4 @@
 
 (asdf:defsystem #:ginjish/tests
   :depends-on (#:ginjish #:parachute)
-  :components ((:file "ginjish-tests")))
+  :components ((:file "tests")))
